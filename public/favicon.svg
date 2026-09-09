@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Arte — Classical Art Bureau. Museum double-frame + serif A monogram + brass finial. -->
+  <rect width="64" height="64" rx="14" fill="#FAF9F6"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="11.5" fill="none" stroke="#2C2A26" stroke-width="3"/>
+  <rect x="9" y="9" width="46" height="46" rx="6.5" fill="none" stroke="#B8932E" stroke-width="1.5"/>
+  <path d="M20.5 44 L32 20 L43.5 44" fill="none" stroke="#2C2A26" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 37.5 H38" stroke="#2C2A26" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M17 44 H24 M40 44 H47" stroke="#2C2A26" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="32" cy="14" r="2.4" fill="#B8932E"/>
+</svg>
