@@ -3,17 +3,26 @@ import { useGallery } from "../../context/GalleryContext";
 import { useLanguage } from "../../context/LanguageContext";
 import { dummyArtworks } from "../../data/dummyData";
 import ConfirmDialog from "../ConfirmDialog";
+import LegalModal from "../LegalModal";
 import { playClick, playChime } from "../../utils/audio";
 
 const Footer = () => {
   const { resetToDefault, artworks } = useGallery();
   const { t } = useLanguage();
   const [showRestoreConfirm, setShowRestoreConfirm] = useState(false);
+  const [showLegalModal, setShowLegalModal] = useState(false);
+  const [legalTab, setLegalTab] = useState("privacy");
 
   const handleReset = () => {
     resetToDefault();
     setShowRestoreConfirm(false);
     playChime();
+  };
+
+  const handleOpenLegal = (tab) => {
+    playClick();
+    setLegalTab(tab);
+    setShowLegalModal(true);
   };
 
   return (
@@ -39,8 +48,20 @@ const Footer = () => {
           >
             {t("footerRestore")} ({artworks.length}/{dummyArtworks.length})
           </button>
-          <a href="#" onClick={playClick} className="hover:text-brass transition-colors">{t("footerPrivacy")}</a>
-          <a href="#" onClick={playClick} className="hover:text-brass transition-colors">{t("footerTerms")}</a>
+          <button
+            type="button"
+            onClick={() => handleOpenLegal("privacy")}
+            className="hover:text-brass transition-colors"
+          >
+            {t("footerPrivacy")}
+          </button>
+          <button
+            type="button"
+            onClick={() => handleOpenLegal("terms")}
+            className="hover:text-brass transition-colors"
+          >
+            {t("footerTerms")}
+          </button>
           <a href="https://www.metmuseum.org" target="_blank" rel="noreferrer" className="hover:text-brass transition-colors">
             {t("footerMetOpen")}
           </a>
@@ -54,6 +75,12 @@ const Footer = () => {
         confirmLabel={t("footerRestore")}
         onConfirm={handleReset}
         onCancel={() => setShowRestoreConfirm(false)}
+      />
+
+      <LegalModal
+        isOpen={showLegalModal}
+        initialTab={legalTab}
+        onClose={() => setShowLegalModal(false)}
       />
     </footer>
   );
