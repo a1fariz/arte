@@ -2,7 +2,9 @@
 
 Aplikasi web arsip dan katalog seni rupa klasik interaktif berbasis React 19, Vite, dan Tailwind CSS. Proyek ini dibangun sebagai implementasi Proyek Akhir Pelatihan React Fundamental 2026.
 
-> 🔗 **Live Demo (Vercel):** _`<TAMBAHKAN-LINK-DEPLOYMENT-VERCEL>`_
+> 🔗 **Live Demo:** [https://www.arte.my.id/](https://www.arte.my.id/)
+>
+> 🎥 **Video Demo & Presentasi:** [Tonton di Google Drive](https://drive.google.com/file/d/1TS_tNfehu3OWYJaBGDlfCNEgo8k5HTMS/view?usp=sharing)
 >
 > 📦 **Repository GitHub:** [https://github.com/a1fariz/arte](https://github.com/a1fariz/arte)
 
