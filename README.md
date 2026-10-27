@@ -176,3 +176,7 @@ Aplikasi di-deploy ke **Vercel**. File `vercel.json` berisi rewrite SPA sehingga
 ## 📄 Lisensi & Atribusi
 
 Hak cipta data karya dan gambar bersumber dari Program [Open Access The Metropolitan Museum of Art](https://www.metmuseum.org/about-the-met/policies-and-documents/open-access) (The Met), New York.
+
+---
+
+[Portfolio Alfa Rizi](https://alfarizi.my.id) · [GitHub profile](https://github.com/a1fariz) · [Contact](mailto:alfarizi.developer@gmail.com)
